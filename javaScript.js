@@ -36,25 +36,16 @@ function cambiaColor(x){
     numero = Math.floor((Math.random()*10));
     document.getElementById(x).style.backgroundColor = letras[numero];
     
-    if (document.getElementById('caja1').style.backgroundColor == document.getElementById('caja2').style.backgroundColor) {
-        if (document.getElementById('caja2').style.backgroundColor == document.getElementById('caja3').style.backgroundColor) {
-            if (document.getElementById('caja3').style.backgroundColor == document.getElementById('caja4').style.backgroundColor) {
-                if (document.getElementById('caja4').style.backgroundColor == document.getElementById('caja5').style.backgroundColor) {
-                    if (document.getElementById('caja5').style.backgroundColor == document.getElementById('caja6').style.backgroundColor) { 
-                        if (document.getElementById('caja6').style.backgroundColor == document.getElementById('caja7').style.backgroundColor) {
-                            if (document.getElementById('caja7').style.backgroundColor == document.getElementById('caja8').style.backgroundColor) {
-                                if (document.getElementById('caja8').style.backgroundColor == document.getElementById('caja9').style.backgroundColor) {
-                                    if (document.getElementById('caja9').style.backgroundColor == document.getElementById('caja10').style.backgroundColor) {
-                                        if (document.getElementById('caja10').style.backgroundColor == document.getElementById('caja1').style.backgroundColor) {
-                                            alert("Error");
-                                        } 
-                                    } 
-                                } 
-                            } 
-                        }
-                    }
-                } 
-            }
-        }
-    } 
+    if (document.getElementById('caja1').style.backgroundColor == document.getElementById('caja2').style.backgroundColor && 
+    document.getElementById('caja2').style.backgroundColor == document.getElementById('caja3').style.backgroundColor &&
+    document.getElementById('caja3').style.backgroundColor == document.getElementById('caja4').style.backgroundColor &&
+    document.getElementById('caja4').style.backgroundColor == document.getElementById('caja5').style.backgroundColor &&
+    document.getElementById('caja5').style.backgroundColor == document.getElementById('caja6').style.backgroundColor && 
+    document.getElementById('caja6').style.backgroundColor == document.getElementById('caja7').style.backgroundColor &&
+    document.getElementById('caja7').style.backgroundColor == document.getElementById('caja8').style.backgroundColor &&
+    document.getElementById('caja8').style.backgroundColor == document.getElementById('caja9').style.backgroundColor &&
+    document.getElementById('caja9').style.backgroundColor == document.getElementById('caja10').style.backgroundColor &&
+    document.getElementById('caja10').style.backgroundColor == document.getElementById('caja1').style.backgroundColor){
+        alert("Error");
+    }
 }   
